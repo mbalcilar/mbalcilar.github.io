@@ -153,6 +153,28 @@ a {
     color: white;
 }
 
+.codes .code {
+    margin-top: 1.5%;
+}
+
+.code .section-2 a {
+    padding: .8%;
+    margin-left: -.1%;
+}
+
+.codes .code a{
+    font-family: 'Ubuntu Mono', serif;
+    padding: .15%;
+}
+.codes .code .section-2 a:hover {
+    transition-property: background-color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+
+    border-radius: 50%;
+    background-color: #d64933;
+    color: white;
+}
 
 .section-title {
     margin-top: 2.5%;
