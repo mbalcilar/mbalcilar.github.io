@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="MCI_MP_tr_files/libs/clipboard/clipboard.min.js"></script>
+<script src="MCI_MP_tr_files/libs/quarto-html/tabby.min.js"></script>
+<script src="MCI_MP_tr_files/libs/quarto-html/popper.min.js"></script>
+<script src="MCI_MP_tr_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="MCI_MP_tr_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="MCI_MP_tr_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="MCI_MP_tr_files/libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.7.32">
+
+  <meta name="author" content="Mehmet Balcilar">
+  <meta name="dcterms.date" content="2025-08-06">
+  <title>Finansal Koşullar Para Politikası Şoklarının Varlık Fiyatları Üzerindeki Etkisinin Bir Belirleyicisi midir?</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="MCI_MP_tr_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="MCI_MP_tr_files/libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="MCI_MP_tr_files/libs/revealjs/dist/theme/quarto-af50907cf78d4623c365f726861f364d.css">
+  <link href="MCI_MP_tr_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="MCI_MP_tr_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="MCI_MP_tr_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="MCI_MP_tr_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="MCI_MP_tr_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="MCI_MP_tr_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" data-background-image="images/bg6.webp" data-background-opacity="0.20" data-background-position="2% 98%, center" data-background-size="1680px, cover" class="quarto-title-block center">
+  <h1 class="title">Finansal Koşullar Para Politikası Şoklarının Varlık Fiyatları Üzerindeki Etkisinin Bir Belirleyicisi midir?</h1>
+  <p class="subtitle">ABD Ekonomisinden Kanıtlar</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Mehmet Balcilar <a href="https://orcid.org/0000-0001-9694-5196" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a>
+</div>
+<div class="quarto-title-author-email">
+<a href="mailto:mbalcilar@newhaven.edu">mbalcilar@newhaven.edu</a>
+</div>
+        <p class="quarto-title-affiliation">
+            University of New Haven
+          </p>
+    </div>
+</div>
+
+  <p class="date">6 Ağustos 2025</p>
+</section>
+<section>
+<section id="giriş" class="title-slide slide level1 mcenter center" data-background-color="#006DAE">
+<h1>Giriş</h1>
+
+</section>
+<section id="arka-plan-12" class="slide level2">
+<h2>Arka Plan (1/2)</h2>
+<ul>
+<li class="fragment"><span class="alert">Varlık fiyatlarının tepkileri</span>, para politikası şoklarına karşı <span class="alert">finansal koşullara</span> göre değişir.
+<ul>
+<li class="fragment"><strong>Para politikası şokları</strong>, <span class="fg" style="--col: #42B540FF"><strong>sakin dönemlerde</strong></span> <span class="fg" style="--col: #42B540FF"><strong>zayıf</strong></span> tepkiler yaratabilirken, finansal piyasalar <span class="fg" style="--col: #AD002AFF"><strong>baskı altında</strong></span> olduğunda son derece <span class="fg" style="--col: #AD002AFF"><strong>etkili</strong></span> hale gelir; bunun nedeni <span class="fg" style="--col: #0099B4FF"><strong>sınırlı kredi arzı, artan riskten kaçınma ve bozulmuş beklentiler</strong></span> gibi pekiştirici mekanizmalardır.</li>
+</ul></li>
+<li class="fragment">Swanson (2021) üç ayrı politika aracı tanımlar:
+<ul>
+<li class="fragment"><strong>Federal Fonlar Faizi (<span class="alert">FFR</span>)</strong>: kısa vadeli faiz oranlarını ve sermaye maliyetini etkiler.</li>
+<li class="fragment"><strong>Sözlü Yönlendirme (<span class="alert">FG</span>)</strong>: gelecekteki faiz oranı patikası hakkında beklentileri etkiler.</li>
+<li class="fragment"><strong>Büyük Ölçekli Varlık Alımları (<span class="alert">LSAPs</span>)</strong>: talep baskısı ve yeniden portföy dengelenmesi yoluyla uzun vadeli faizleri düşürür.</li>
+</ul></li>
+</ul>
+</section>
+<section id="arka-plan-22" class="slide level2">
+<h2>Arka Plan (2/2)</h2>
+<ul>
+<li class="fragment">Alessandri &amp; Mumtaz (2017, 2019): Finansal rejimler — sıkı veya gevşek finansal koşullar ile tanımlanır — şokların yayılımını değiştirir.
+<ul>
+<li class="fragment">Sıkı rejimlerde, finansal sürtüşmeler ve doğrusallıktan saplar, küçük şokları bile önemli hale getirir.</li>
+</ul></li>
+</ul>
+</section>
+<section id="motivasyon" class="slide level2">
+<h2>Motivasyon</h2>
+<div class="fragment">
+<ul>
+<li class="fragment">Politika etkinliği, finansal piyasaların durumundan bağımsız değildir.
+<ul>
+<li class="fragment">Yüksek finansal stres dönemlerinde, geleneksel aktarım mekanizmaları (örneğin faiz kanalı) bozulabilirken, LSAPs gibi alışılmadık araçlar daha etkili hale gelir.</li>
+</ul></li>
+<li class="fragment">Finansal sürtüşmeler bağlayıcı hale geldiğinde, para politikası etkilerinin varlık fiyatları ve reel ekonomi üzerindeki etkilerinde asimetriler oluşur.
+<ul>
+<li class="fragment">Bu durum Bernanke, Gertler &amp; Gilchrist (1999) ve Brunnermeier &amp; Sannikov (2014) tarafından modellerle teorik olarak temellendirilmiştir.</li>
+</ul></li>
+<li class="fragment"><span class="bg" style="--col: #e64173"><strong>Temel ampirik soru</strong></span> <span class="fg" style="--col: #e64173"><em>Para politikası şoklarının etkileri finansal rejimler arasında nasıl farklılık gösteriyor? Hangi politika araçları stres altında etkili kalıyor?</em></span></li>
+</ul>
+</div>
+<div class="fragment">
+<div class="callout callout-important callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p><strong>Rejim-bağımlı etkileri anlamak, dirençli para politikası stratejileri tasarlamak için esastır.</strong></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="bu-çalışmanın-özeti" class="slide level2">
+<h2>Bu Çalışmanın Özeti</h2>
+<ul>
+<li class="fragment">Sıkı ve gevşek finansal koşullarda farklı türdeki para politikası şoklarına karşı varlık fiyatlarının tepkilerini nicel olarak ölçmektedir.
+<ul>
+<li class="fragment">Özellikle faiz oranları ve risk koşullarına duyarlı olan hisse senedi ve konut fiyatlarına odaklanmaktadır.</li>
+</ul></li>
+<li class="fragment">Finansal rejimleri Ulusal Finansal Koşullar Endeksi (NFCI) temelinde endojen olarak sınıflandıran bir eşikli VAR çerçevesi kullanmaktedır.</li>
+<li class="fragment">FOMC duyuruları etrafında yüksek frekanslı para politikası sürprizlerini kullanarak tanımlama stratejisi uygulamaktadır.
+<ul>
+<li class="fragment">Makro-finansal gürültüden arındırılmış, dışsal para şoklarının net olarak ayrılmasını sağlamaktadır.</li>
+</ul></li>
+<li class="fragment">Sıkı finansal koşullarda LSAP ve FFR şoklarına daha güçlü varlık fiyatı tepkileri bulmaktadır; FG her iki rejimde de görece etkisiz kalmakta.</li>
+</ul>
+</section></section>
+<section>
+<section id="veri" class="title-slide slide level1 mcenter center" data-background-color="#006DAE">
+<h1>Veri</h1>
+
+</section>
+<section id="ulusal-finansal-koşullar-endeksi-nfci-12" class="slide level2">
+<h2>Ulusal Finansal Koşullar Endeksi (NFCI) (1/2)</h2>
+<div class="fragment">
+<ul>
+<li class="fragment">Chicago Fed tarafından geliştirilen NFCI, ABD’nin finansal koşullarını haftalık olarak ölçer.
+<ul>
+<li class="fragment">Kredi açılıkları, kaldıraç ve hisse senedi oynaklığı gibi 100’den fazla para piyasası göstergesine dayanır.</li>
+</ul></li>
+<li class="fragment">Karma frekanslı dinamik faktör modeli yardımıyla bu bilgileri tek bir standartlaştırılmış endekste toplar.
+<ul>
+<li class="fragment">Pozitif değerler ortalamanın üzerinde sıkı koşulları, negatif değerler ise gevşek koşulları gösterir.</li>
+<li class="fragment">Alt bileşenler (risk, kredi, kaldıraç) stresin kaynaklarını ayırmada yardımcı olur.</li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment">
+<div class="callout callout-important callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p><strong>NFCI hem eşzamanlı bir finansal stres göstergesi hem de öncü bir sinyal işlevi görür.</strong></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="ulusal-finansal-koşullar-endeksi-nfci-22" class="slide level2">
+<h2>Ulusal Finansal Koşullar Endeksi (NFCI) (2/2)</h2>
+
+<img data-src="images/FCI.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
+<section id="para-politikası-şokları-15" class="slide level2">
+<h2>Para Politikası Şokları (1/5)</h2>
+<ul>
+<li class="fragment"><strong>Swanson (2021)</strong> yaklaşımı takip edilerek, şoklar FOMC duyuruları etrafındaki kısa zaman aralıklarında ortaya çıkan piyasa sürprizlerinden türetilir.
+<ul>
+<li class="fragment"><span class="bg" style="--col: #e64173"><strong>Sürpriz</strong></span> = <em>politika açıklamasından hemen sonra varlık fiyatlarındaki (ör. vadeli işlemler veya tahvil getirileri) değişim.</em></li>
+</ul></li>
+</ul>
+</section>
+<section id="para-politikası-şokları-25" class="slide level2">
+<h2>Para Politikası Şokları (2/5)</h2>
+<div class="fragment">
+<ul>
+<li class="fragment">Üç kategori:
+<ul>
+<li class="fragment"><strong>FFR şokları:</strong> <span class="alert">1–3 aylık Federal Fonlar Vadeli İşlem oranlarındaki değişiklikler.</span></li>
+<li class="fragment"><strong>FG şokları:</strong> <span class="alert">1-2 yıllık vadede Eurodollar/OIS (Gecelik Endeks Takası) vadeli oranlarındaki değişiklikler; sözlü yönlendirme etkisini yakalar.</span></li>
+<li class="fragment"><strong>LSAP şokları:</strong> <span class="alert">Kısa vadeli oran beklentilerine ortogonal 10 yıllık hazine tahvil getirilerindeki değişiklikler.</span></li>
+</ul></li>
+<li class="fragment">Bu şoklar VAR çerçevesinde dışsal araçlar olarak kullanılır.
+<ul>
+<li class="fragment">Yapısal tepkilerin nedensel olarak tanımlanmasına olanak sağlar.</li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment">
+<div class="callout callout-important callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p><strong>Bu tanımlama stratejisi, politika haberlerinin kısa zaman aralıklarını kullanarak eşanlılık yanlılığını azaltır.</strong></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="ffr-şoklar" class="slide level2">
+<h2>FFR Şoklar</h2>
+
+<img data-src="images/FFR_shock.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
+<section id="fg-şokları" class="slide level2">
+<h2>FG Şokları</h2>
+
+<img data-src="images/FG_shock.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
+<section id="lsap-şokları" class="slide level2">
+<h2>LSAP Şokları</h2>
+
+<img data-src="images/LSAP_shock.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section></section>
+<section>
+<section id="yöntem" class="title-slide slide level1 mcenter center" data-background-color="#006DAE">
+<h1>Yöntem</h1>
+
+</section>
+<section id="model-bayesçi-kendinden-çalışan-yapısal-eşikli-vektör-otoregresyon-bsetsvar-12" class="slide level2">
+<h2>Model: Bayesçi (Kendinden-Çalışan) Yapısal Eşikli Vektör Otoregresyon (BSETSVAR) (1/2)</h2>
+<div class="fragment">
+<ul>
+<li class="fragment">Ampirik model, Bayesçi çerçevede tahmin edilen eşik (rejim geçişli) bir vektör otoregresyon (TVAR) modelidir.
+<ul>
+<li class="fragment">Katsayıların ve şok tepkilerinin finansal koşullara bağlı olarak değişmesine olanak tanır.</li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment">
+<p><span class="math inline">\(X_{t} = (X_{1t},X_{2t},\ldots,X_{nt})^\prime\)</span> zaman serilerini içeren <span class="math inline">\(n \times 1\)</span> bir vektör olsun.</p>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>BSETSVAR</strong></p>
+</div>
+<div class="callout-content">
+<p><span class="math display">\[
+X_{t} = \left( v_{1} + \sum_{j = 1}^{p}{A_{1,j}X_{t - j}} + \Omega_{1}^{1/2}e_{1,t} \right)S_{t} + \left( v_{2} + \sum_{j = 1}^{p}{A_{2,j}X_{t - j}} + \Omega_{2}^{1/2}e_{2,t} \right){(1 - S}_{t})
+\]</span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="fragment">
+<ul>
+<li class="fragment">Rejimler, gecikmeli NFCI (<span class="math inline">\(F_{t-d}\)</span>) tarafından belirlenir ve eşik <span class="math inline">\(c^{*}\)</span> veriden içsel olarak tahmin edilir.</li>
+</ul>
+</div>
+</section>
+<section id="model-22" class="slide level2">
+<h2>Model (2/2)</h2>
+<div class="fragment">
+<ul>
+<li class="fragment">Durum değişkeni <span class="math inline">\(S_{t}\)</span>, gömülü bir gösterge fonksiyonunu temsil eder.</li>
+<li class="fragment">Normal ve finansal stres dönemlerini ayırt eder.</li>
+<li class="fragment">Rejimler, ABD finansal koşulları endeksi (<span class="math inline">\(F\)</span>) ile gözlemlenemeyen eşik değeri <span class="math inline">\(c^{*}\)</span>’ye göre belirlenir:</li>
+</ul>
+</div>
+<div class="fragment">
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Durum Değişkeni</strong></p>
+</div>
+<div class="callout-content">
+<p><span class="math display">\[
+S_{t} = 1 \Longleftrightarrow F_{t - d} \leq c^{*}  \qquad \text{ve} \qquad   S_{t} = 0 \Longleftrightarrow F_{t - d} &gt; c^{*}        
+\]</span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="fragment">
+<p>burada gecikme <span class="math inline">\(d\)</span> ve eşik <span class="math inline">\(c^{*}\)</span> parametreleri bilinmemektedir.</p>
+</div>
+<div class="fragment">
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>BSETSVAR</strong></p>
+</div>
+<div class="callout-content">
+<p><span class="math display">\[
+X_t = \begin{cases}
+v_{1} + \sum_{j = 1}^{p}{A_{1,j}X_{t - j}} + \Omega_{1}^{1/2}e_{1,t}, &amp; F_{t - d} \leq c^{*} \\
+v_{2} + \sum_{j = 1}^{p}{A_{2,j}X_{t - j}} + \Omega_{2}^{1/2}e_{2,t}, &amp; F_{t - d} &gt; c^{*}
+\end{cases}
+\]</span></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="model-değişkenleri-ve-özellikleri" class="slide level2 smaller">
+<h2>Model Değişkenleri ve Özellikleri</h2>
+<ul>
+<li class="fragment"><span class="math inline">\(Y_t\)</span>: Endojen değişkenler vektörü
+<ul>
+<li class="fragment">Federal Fonlar Faizi (FFR)</li>
+<li class="fragment">Hisse Senedi Fiyatları (S&amp;P 500, log düzey)</li>
+<li class="fragment">Temettüler (reel)</li>
+<li class="fragment">Konut Fiyatları (Case-Shiller endeksi, reel)</li>
+<li class="fragment">TÜFE enflasyonu (log fark)</li>
+<li class="fragment">Sanayi Üretimi (log fark)</li>
+</ul></li>
+<li class="fragment">Dönem: 1991:M1-2019:M6, 336 gözlem</li>
+<li class="fragment">Gecikme yapısı BIC ile belirlenir; genellikle 2–4 gecikme.</li>
+<li class="fragment">Öncüller: Minnesota tipi küçülme, tüm denklemlerde rejimden bağımsız.</li>
+<li class="fragment">Geçiş, model içinde tahmin edilen gecikmeli NFCI (eşik değişkeni) tarafından belirlenir.</li>
+<li class="fragment">Rejimlere göre ayrı ayrı hesaplanan zamanla değişen etki-tepki fonksiyonları (IRF).</li>
+</ul>
+</section>
+<section id="dışsal-araçlar-temsili-svar" class="slide level2 smaller">
+<h2>Dışsal Araçlar (Temsili SVAR)</h2>
+<ul>
+<li>Yapısal şoklar <span class="math inline">\(\varepsilon_{jt}\)</span>, Mertens &amp; Ravn (2013)’ın önerisiyle piyasa sürprizleri <span class="math inline">\(m_t\)</span> kullanılarak tanımlanır.</li>
+</ul>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Araç Geçerliliği</strong></p>
+</div>
+<div class="callout-content">
+<p><span class="math display">\[
+\mathbb{E}[m_t \varepsilon_{1t}] \neq 0, \quad \mathbb{E}[m_t \varepsilon_{jt}] = 0 \quad \text{için } j \neq 1
+\]</span></p>
+</div>
+</div>
+</div>
+<ul>
+<li>Tahmin iki aşamada yürütülür:
+<ul>
+<li>Birinci aşama: VAR artık terimleri araçlara karşı regresyona sokulur, yapısal şok serisi çıkarılır.</li>
+<li>İkinci aşama: Tanımlanan şoka dayalı tepkiler tahmin edilir.</li>
+</ul></li>
+<li>Avantaj: Güçlü sıralama varsayımlarına gerek olmadan güvenilir tanımlama sağlar.</li>
+</ul>
+<div class="callout callout-important callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p><strong>Bu strateji, spesifik politika araçlarının finansal piyasalar üzerindeki nedensellik etkisini ortaya çıkarır.</strong></p>
+</div>
+</div>
+</div>
+</section>
+<section id="tahmin-ve-çıkarım" class="slide level2">
+<h2>Tahmin ve Çıkarım</h2>
+<ul>
+<li>Bayesçi tahmin, gecikme ve varyans yapıları üzerine öncüllerle Gibbs örneklemesiyle yapılır.</li>
+<li>Eşik ve gecikme parametreleri marjinal olabilirlik kullanılarak tahmin edilir.</li>
+<li>Her rejim için ayrı IRF setleri hesaplanır.
+<ul>
+<li>Grafiklerde gösterilenler: ardıl medyan + %68 güven aralıkları</li>
+</ul></li>
+</ul>
+<div class="callout callout-important callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p><strong>Rejim-özel IRF’ler, para aktarımının finansal durumlara göre nasıl farklılaştığını nicel olarak gösterir.</strong></p>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="ampirik-bulgular" class="title-slide slide level1 mcenter center" data-background-color="#006DAE">
+<h1>Ampirik Bulgular</h1>
+
+</section>
+<section id="ffr-şoklarına-tepkiler" class="slide level2 smaller">
+<h2>FFR Şoklarına Tepkiler</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><img data-src="images/fig_FFR_factor_Exo_Th.png" class="quarto-figure quarto-figure-left" style="width:90.0%"></p>
+</figure>
+</div>
+</div><div class="column" style="width:40%;">
+<ul>
+<li>Hisse senedi ve konut fiyatları sıkı koşullarda daha fazla düşer.
+<ul>
+<li>Bu durum, sınırlı arbitraj ve kaldıracın azaltılması mekanizmalarıyla uyumludur.</li>
+</ul></li>
+<li>Reel ekonomi gecikmeli ancak stres zamanlarında daha şiddetli tepki verir.
+<ul>
+<li>Finansman koşulları sıkı olduğunda yatırım ve tüketim daha hassas olmaktadır.</li>
+</ul></li>
+</ul>
+<div class="callout callout-important callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p><strong>Geleneksel faiz politikası stres altında daha güçlü — ZLB (Sıfır Alt Sınır) mantığının tersine.</strong></p>
+</div>
+</div>
+</div>
+</div></div>
+</section>
+<section id="sözlü-yönlendirme-şoklarına-tepkiler" class="slide level2">
+<h2>Sözlü Yönlendirme Şoklarına Tepkiler</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><img data-src="images/fig_FG_factor_Exo_Th.png" class="quarto-figure quarto-figure-left" style="width:90.0%"></p>
+</figure>
+</div>
+</div><div class="column" style="width:40%;">
+<ul>
+<li>FG, stresli dönemlerde daha az etkilidir.
+<ul>
+<li>Bu durum güvenilirlik sorunlarına veya bozulmuş beklenti kanalına bağlı olabilir.</li>
+</ul></li>
+<li>Varlık fiyatı etkileri FFR veya LSAP’lere kıyasla zayıftır.
+<ul>
+<li>Hisse senetleri neredeyse tepki vermez; konut fiyatlarında minimal değişim görülür.</li>
+</ul></li>
+</ul>
+</div></div>
+</section>
+<section id="lsap-şoklarına-tepkiler" class="slide level2">
+<h2>LSAP Şoklarına Tepkiler</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><img data-src="images/fig_LSAP_factor_Exo_Th.png" class="quarto-figure quarto-figure-left" style="width:90.0%"></p>
+</figure>
+</div>
+</div><div class="column" style="width:40%;">
+<ul>
+<li>Her iki rejimde de güçlü varlık fiyatı tepkileri, özellikle sıkı koşullarda.
+<ul>
+<li>Artan likidite, vadeye göre risk primi daralması ve portföy dengesi etkisini yansıtır.</li>
+</ul></li>
+<li>Bu yükseltme etkisi, finansal sürtüşmelerin belirleyici olduğunu gösterir.
+<ul>
+<li>LSAP’ler, finansal aracıların karşılaştığı risk sınırlamalarını hafifletebilir.</li>
+</ul></li>
+</ul>
+</div></div>
+</section>
+<section id="araçlar-arası-karşılaştırma" class="slide level2">
+<h2>Araçlar Arası Karşılaştırma</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><img data-src="images/Boxplots_IRF_Eco_Th_tr.png" class="quarto-figure quarto-figure-left" style="width:90.0%"></p>
+</figure>
+</div>
+</div><div class="column" style="width:40%;">
+<ul>
+<li>LSAP’ler, stresli dönemlerde büyüklük açısından baskın hale gelir.
+<ul>
+<li>Bu etkiler, FFR ile kıyaslandığında eşit hatta daha güçlü olabilir.</li>
+</ul></li>
+<li>FG, gevşek koşullarda bile sürekli olarak zayıftır.
+<ul>
+<li>Bu durum, sözlü yönlendirmelerin temel politika aracı olma rolünü sorgulatır.</li>
+</ul></li>
+</ul>
+</div></div>
+</section>
+<section id="dirençlilik-testleri" class="slide level2">
+<h2>Dirençlilik Testleri</h2>
+<ul>
+<li class="fragment">Bulgular, alternatif tanımlama ve eşik spesifikasyonları altında da geçerlidir.
+<ul>
+<li class="fragment">Gecikme parametresi <span class="math inline">\(d\)</span>’nin değiştirilmesi ve HP-filtreli FCI kullanımı temel çıkarımları değiştirmez.</li>
+</ul></li>
+</ul>
+</section></section>
+<section>
+<section id="sonuç-ve-politika-çıkarımları" class="title-slide slide level1 mcenter center" data-background-color="#006DAE">
+<h1>Sonuç ve Politika Çıkarımları</h1>
+
+</section>
+<section id="özet" class="slide level2">
+<h2>Özet</h2>
+<ul>
+<li class="fragment"><span class="alert">Para politikasının varlık fiyatları üzerindeki etkileri, rejime bağlıdır.</span>
+<ul>
+<li class="fragment">Finansal rejimleri göz ardı etmek, önemli asimetrileri gizler.</li>
+</ul></li>
+<li class="fragment"><span class="alert">LSAP’ler finansal stres altında özellikle etkilidir.</span>
+<ul>
+<li class="fragment">Kriz dönemlerinde bilanço müdahalelerini destekler.</li>
+</ul></li>
+<li class="fragment"><span class="alert">FG bu tür dönemlerde sınırlı aktarım gücüne sahiptir.</span>
+<ul>
+<li class="fragment">Beklentiye dayalı müdahalelerin sınırlarını gösterir.</li>
+</ul></li>
+</ul>
+</section>
+<section id="çıkarımlar" class="slide level2">
+<h2>Çıkarımlar</h2>
+<ul>
+<li class="fragment"><span class="alert">Politika yapıcılar, müdahaleleri finansal rejime göre şekillendirmelidir.</span>
+<ul>
+<li class="fragment">Gerçek zamanlı FCI göstergeleri, politika karmasını yönlendirmede kullanılabilir.</li>
+</ul></li>
+<li class="fragment"><span class="alert">Kriz zamanlarında, bilanço araçları geleneksel faiz indirimlerinden daha etkili olabilir.</span>
+<ul>
+<li class="fragment">Özellikle konut piyasalarında genişlemeci para politikası için kantitatif kolaylaştırmanın (QE) rolü güçlenir.</li>
+</ul></li>
+<li class="fragment"><span class="alert">Sözlü yönlendirme tek başına kredi kısıtları varken yetersizdir.</span>
+<ul>
+<li class="fragment">Likidite kanallarının, beklenti kanallarına göre daha önemli olduğunu vurgular.</li>
+</ul></li>
+</ul>
+</section></section>
+<section id="kaynakça" class="title-slide slide level1 mcenter smaller center" data-background-color="#006DAE">
+<h1>Kaynakça</h1>
+<ul>
+<li>Alessandri, P., &amp; Mumtaz, H. (2017). <em>Financial conditions and density forecasts for US output and inflation</em>. Review of Economic Dynamics, 24, 66–78.</li>
+<li>Alessandri, P., &amp; Mumtaz, H. (2019). <em>Financial regimes and uncertainty shocks</em>. Journal of Monetary Economics, 101, 18–36.</li>
+<li>Bernanke, B. S., Gertler, M., &amp; Gilchrist, S. (1999). <em>The financial accelerator in a quantitative business cycle framework</em>. In J. B. Taylor &amp; M. Woodford (Eds.), Handbook of Macroeconomics (Vol. 1C, pp.&nbsp;1341–1393). Elsevier.</li>
+<li>Brave, S., &amp; Butters, R. (2012). <em>Diagnosing the financial system: Financial conditions and financial stress</em>. International Journal of Central Banking.</li>
+<li>Brunnermeier, M. K., &amp; Sannikov, Y. (2014). <em>A macroeconomic model with a financial sector</em>. American Economic Review, 104(2), 379–421.</li>
+<li>Paul, P. (2019). <em>The Time-Varying Effect of Monetary Policy on Asset Prices</em>. FRBSF Working Paper 2017-09.</li>
+<li>Swanson, E. (2021). <em>Measuring the Effects of Federal Reserve Forward Guidance and Asset Purchases</em>. Journal of Monetary Economics, 118, 32–53.</li>
+</ul>
+</section>
+
+<section id="teşekkürler" class="title-slide slide level1 mcenter center" data-background-color="#006DAE">
+<h1>Teşekkürler</h1>
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+<p>ABD’de Finansal Koşulllar ve Para Politikası</p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="MCI_MP_tr_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="MCI_MP_tr_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="MCI_MP_tr_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="MCI_MP_tr_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="MCI_MP_tr_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="MCI_MP_tr_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="MCI_MP_tr_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="MCI_MP_tr_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="MCI_MP_tr_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="MCI_MP_tr_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="MCI_MP_tr_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
+              }
+            }
+            return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>
